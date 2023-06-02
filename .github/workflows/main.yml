@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 18
       - name: Sync Branches Enhanced
-        uses: ./
+        uses: HXavS/sync-branches@main
         id: pull
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
