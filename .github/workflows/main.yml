@@ -19,6 +19,6 @@ jobs:
         id: branch-sync
         uses: ./
         with:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{ secrets.LOCAL_TOKEN }}
           FROM_BRANCH: "main"
           TO_BRANCH: "develop"
