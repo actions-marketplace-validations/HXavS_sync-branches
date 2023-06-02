@@ -15,9 +15,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 18
-      - name: Opening pull request
-        id: pull
+      - name: Sync Branches Enhanced
         uses: ./
+        id: pull
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           FROM_BRANCH: "main"
